@@ -1,0 +1,5 @@
+steps:
+  - name: ":parrot: Run app"
+    command: "run_rails_app.sh"
+    agents:
+      queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
